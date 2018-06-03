@@ -1,80 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Coming Soon</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style type="text/css">
-body {
-  /*background: linear-gradient(90deg, white, gray);*/
-  background-color: #eee;
-}
-
-body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.container {
-  margin-left:  auto;
-  margin-right:  auto;
-  margin-top: 177px;
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.row:before, .row:after {
-  display: table;
-  content: " ";
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0 0 20px 0;
-}
-
-.lead {
-  font-size: 21px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
-p {
-  margin: 0 0 10px;
-}
-
-a {
-  color: #3282e6;
-  text-decoration: none;
-}
-</style>
-</head>
-
-<body>
-<div class="container text-center" id="error">
-
-  <svg height="100" width="100">
-    <circle cx="50" cy="50" r="31" stroke="#679b08" stroke-width="9.5" fill="none" />
-    <circle cx="50" cy="50" r="6" stroke="#679b08" stroke-width="1" fill="#679b08" />
-    <line x1="50" y1="50" x2="35" y2="50" style="stroke:#679b08;stroke-width:6" />
-    <line x1="65" y1="35" x2="50" y2="50" style="stroke:#679b08;stroke-width:6" />
-    <path d="M59 65 L83 65 L75 87 Z" fill="#679b08" />
-    <rect width="20" height="9" x="70" y="56" style="fill:#eee;stroke-width:0;" />
-  </svg>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="main-icon text-success"><span class="uxicon uxicon-clock-refresh"></span></div>
-      <h1>Future home of something quite cool.</h1>
-      <p class="lead">If you are a <strong>visitor</strong>, check back soon.</p>
-    </div>
-  </div>
-
+<html ng-app="eazlearn" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="google-signin-client_id" content="1032264720348-ajg86dfu44m8rg3nd8lb4ihc9gsmevu5.apps.googleusercontent.com"><title>EazLearn Admin</title><link href="./EazLearn Admin_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link href="./EazLearn Admin_files/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link id="loadBefore" href="./EazLearn Admin_files/app.css" rel="stylesheet"></head><body ng-controller="MainCtrl as main" class="body-small  gray-bg pace-done" landing-scrollspy="" id="page-top"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
 </div>
-
-</body>
-</html>
+<div class="pace-activity"></div></div><!-- uiView: --><div ui-view="" class="ng-scope"><h1 class="logo-name text-center ng-scope">Eaz Learn</h1>
+<div class="middle-box text-center loginscreen animated fadeInDown ng-scope" ng-controller="LoginCtrl">
+        <div ng-show="!isLoginClicked">
+        <h3>Welcome to Eaz Learn</h3>
+        <p>What you see here is the Admin Interface of EazLearn App.
+        </p>
+        <p>Login in. To see it in action.</p>
+        </div>
+        <div ng-show="isLoginClicked" class="ng-hide">
+        <h3>Terms and Conditions</h3>
+        <p>By clicking Agree, you agree to our <a href="/">Terms and Conditions </a> for using this Application
+        </p>
+    </div>
+        <div>
+        <form class="m-t ng-pristine ng-valid" role="form" action="/#">
+            <div ng-show="!loginHide" class="sk-spinner sk-spinner-double-bounce ng-hide">
+                <div style="background-color: #ed5565" class="sk-double-bounce1"></div>
+                <div style="background-color: #ed5565" class="sk-double-bounce2"></div>
+            </div>
+            <button ng-show="loginHide &amp;&amp; !isLoginClicked" id="toggleSpinners" ng-click="login()" class="btn btn-danger block full-width m-b">Login with 
+                <strong>Google</strong>
+            </button>
+            <button ng-show="loginHide &amp;&amp; isLoginClicked" id="pre" ng-click="login()" class="btn btn-success block full-width m-b ng-hide">Agree and Continue Login
+            </button>
+        </form>
+        <p class="m-t"> <small>Eazlearn Admin Interface © 2018</small> </p>
+        
+</div></div></div><script src="./EazLearn Admin_files/cb=gapi.loaded_0" async=""></script><script src="./EazLearn Admin_files/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/metisMenu.min.js" integrity="sha256-ojAzJXFNpRgNVTClgjj3CG0Yx3MFRZLoj2BTR6phcBU=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/jquery.slimscroll.min.js" integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/pace.min.js" integrity="sha256-EPrkNjGEmCWyazb3A/Epj+W7Qm2pB9vnfXw+X6LImPM=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/angular.min.js"></script><script src="./EazLearn Admin_files/ocLazyLoad.min.js" integrity="sha256-pffI9Ckqug9jF0u7hv756RnZftcvgIV+gwZcZt28taQ=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/angular-ui-router.min.js" integrity="sha256-FMocp8pp1WruAK6GtjNDtuGAALCt/dCsVtw7oSjvPX0=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/ui-bootstrap-tpls.min.js" integrity="sha256-tyfWW2LtJQNI+l3F0h6xDV/ij6Mfn8lwSKHWOsmEgXM=" crossorigin="anonymous"></script><script src="./EazLearn Admin_files/phoenix.js"></script><script src="./EazLearn Admin_files/api.js" gapi_processed="true"></script><script src="./EazLearn Admin_files/app.js"></script><iframe aria-hidden="true" id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" src="./EazLearn Admin_files/iframe.html" style="position: absolute; width: 1px; height: 1px; left: -9999px; display: none;"></iframe></body></html>
